@@ -2,7 +2,7 @@
 					
 					12 BIT Assembler created by Anunay and Tejas Dubhir
 
-How to run :
+# How to run :
 
 	1 - Enter code in Input.txt
 
@@ -13,7 +13,7 @@ How to run :
 	4 - Run wiht the following command after creating .class file- "java SecondPassHandler.class"
 
 
-Description of First Pass : 
+# Description of First Pass : 
 
 	The one pass iterates over the Assembly code and checks for error . BReaks instruction into tokens and then scans each token and processes it as operation or label or operand or comment , any error found is written in the error.tx with the line of code where it is found.Checks for forward referencing of labels. BufferedReader is used to read instructions line by line from input.txt or Filereader and FileWriter is used to write into a file.
 	
@@ -153,7 +153,7 @@ Description of First Pass :
 
 		14 . Label not declared
 
-Description of Second Pass : 
+# Description of Second Pass : 
 
 	The second pass iterates over the input file, and checks for the operations translates it to its corresponding opcodes. Then it checks if there are any operands or not. If operands are given in the input, then it allocates the necessary address from the memory to it. If there are any branches, then the address of destination instruction is stored in the output file. Also, the program counter is set to the next value after every instruction. Then using PrintWriter class in-built in java, the output is stored in output.txt file.
 
